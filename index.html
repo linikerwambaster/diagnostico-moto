@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>120 Diagnósticos de Moto por Sintoma</title>
+<meta name="description" content="Guia de consulta rápida: 120 defeitos de moto por sintoma, com a rota de teste na ordem certa. Descubra o que verificar primeiro antes de gastar com peça ou oficina.">
+<meta property="og:title" content="120 Diagnósticos de Moto por Sintoma">
+<meta property="og:description" content="Antes de gastar com peça ou oficina, descubra o que verificar primeiro. Uma página por defeito.">
+<meta property="og:image" content="img/produto_quadrado.jpg">
+<meta name="theme-color" content="#15171B">
+<link rel="icon" href="img/favicon.png">
+<style>
+@font-face{font-family:"Big";src:url("fonts/BigShoulders.ttf");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Fig";src:url("fonts/Figtree.ttf");font-weight:300 900;font-display:swap}
+:root{--asf:#15171B;--asf2:#202329;--papel:#F7F5F0;--tinta:#1B1D21;--cinza:#5E646E;--linha:#E2DED6;--lar:#FF6A00;--lar2:#FF8A33;--ama:#FFC93C;--verde:#12A150;--verm:#C1121F}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--papel);color:var(--tinta);font-family:"Fig",system-ui,sans-serif;font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.w{max-width:560px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Big",Impact,sans-serif;font-weight:900;text-transform:uppercase;line-height:.95;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(34px,9vw,46px);margin-bottom:14px}
+h2 em,h1 em{font-style:normal;color:var(--lar)}
+.kick{display:inline-block;font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--lar);margin-bottom:10px}
+section{padding:56px 0}
+.fita{height:14px;background:repeating-linear-gradient(135deg,var(--ama) 0 14px,var(--asf) 14px 28px)}
+.btn{display:block;width:100%;text-align:center;background:var(--lar);color:#111;font-family:"Big";font-weight:900;font-size:25px;text-transform:uppercase;letter-spacing:.02em;padding:17px 18px 15px;border-radius:14px;text-decoration:none;box-shadow:0 8px 0 #B84C00,0 14px 30px rgba(255,106,0,.35);transition:transform .12s,box-shadow .12s}
+.btn:active{transform:translateY(5px);box-shadow:0 3px 0 #B84C00}
+.miudo{font-size:13px;color:var(--cinza);text-align:center;margin-top:12px}
+/* HERO */
+.hero{background:var(--asf);color:#fff;padding:26px 0 40px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:26px 26px}
+.hero .w{position:relative}
+.hero .kick{color:var(--ama)}
+.hero h1{font-size:clamp(48px,14vw,70px)}
+.hero h1 .n{color:var(--lar);display:block;font-size:1.35em;line-height:.85}
+.hero p.sub{font-size:18px;color:#D9DCE1;margin:16px 0 4px}
+.hero p.sub b{color:#fff}
+.hero .mock{margin:8px -30px 8px}
+.hero .miudo{color:#A8AEB8}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 22px}
+.chips span{border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:6px 12px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.chips span:first-child{background:var(--lar);border-color:var(--lar);color:#111}
+/* HISTÓRIA */
+.hist p{margin:0 0 14px}
+.hist .virada{background:#fff;border-left:6px solid var(--lar);border-radius:0 12px 12px 0;padding:16px 18px;font-weight:600}
+.hist .virada b{color:var(--lar)}
+/* CARROSSEL */
+.car{background:var(--asf2);color:#fff;padding:48px 0 40px}
+.car h2{color:#fff}
+.trilho{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 18px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.trilho::-webkit-scrollbar{display:none}
+.trilho img{flex:0 0 74%;max-width:330px;scroll-snap-align:center;border-radius:8px;box-shadow:0 14px 30px rgba(0,0,0,.45);cursor:zoom-in}
+.dica{font-size:13px;color:#A8AEB8;text-align:center}
+/* BENEFÍCIOS */
+.cards{display:grid;gap:12px}
+.card{background:#fff;border-radius:14px;padding:16px 16px 16px 60px;position:relative;border:1px solid var(--linha)}
+.card b{display:block;font-family:"Big";font-weight:800;font-size:21px;text-transform:uppercase;line-height:1;margin-bottom:4px}
+.card span{font-size:15px;color:var(--cinza)}
+.card i{position:absolute;left:16px;top:16px;width:32px;height:32px;border-radius:9px;background:var(--asf);color:var(--lar);display:grid;place-items:center;font-style:normal;font-family:"Big";font-weight:900;font-size:19px}
+/* ANTES DEPOIS */
+.ad{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ad div{border-radius:14px;padding:16px 14px}
+.ad h3{font-size:21px;margin-bottom:10px}
+.ad ul{margin:0;padding:0;list-style:none;font-size:15px}
+.ad li{padding:7px 0 7px 22px;position:relative;line-height:1.35;border-top:1px solid rgba(0,0,0,.07)}
+.ad .sem{background:#FDE7E4}.ad .sem h3{color:var(--verm)}.ad .sem li:before{content:"✕";position:absolute;left:2px;color:var(--verm);font-weight:900}
+.ad .com{background:#E5F4EA}.ad .com h3{color:var(--verde)}.ad .com li:before{content:"✓";position:absolute;left:2px;color:var(--verde);font-weight:900}
+/* SISTEMAS */
+.sis{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sis div{background:#fff;border:1px solid var(--linha);border-radius:12px;padding:11px 12px;font-weight:700;font-size:14px;line-height:1.2;border-left:5px solid var(--c)}
+.sis div small{display:block;font-weight:600;color:var(--cinza);font-size:12px;margin-top:3px}
+/* PARA QUEM */
+.pq{display:grid;gap:10px}
+.pq div{background:#fff;border-radius:14px;padding:16px;border:1px solid var(--linha)}
+.pq h3{font-size:22px;margin-bottom:8px}
+.pq ul{margin:0;padding-left:20px;font-size:15px}
+/* BÔNUS */
+.bon{background:var(--asf);color:#fff}
+.bon h2{color:#fff}
+.bon .mock{margin:0 -24px 10px}
+.bitem{background:var(--asf2);border-radius:14px;padding:14px 16px;margin-bottom:10px;border:1px solid #33373F}
+.bitem b{font-family:"Big";font-weight:800;font-size:21px;text-transform:uppercase;display:block;line-height:1;margin-bottom:4px}
+.bitem b small{font-family:"Fig";font-size:11px;letter-spacing:.14em;color:var(--ama);display:block;margin-bottom:5px}
+.bitem span{font-size:15px;color:#C9CDD4}
+/* PLANOS */
+.planos{display:grid;gap:18px}
+.plano{background:#fff;border-radius:18px;padding:22px 20px;border:2px solid var(--linha);position:relative}
+.plano.top{border-color:var(--lar);box-shadow:0 18px 40px rgba(255,106,0,.18)}
+.plano .tag{position:absolute;top:-14px;left:20px;background:var(--lar);color:#111;font-weight:800;font-size:12px;letter-spacing:.12em;padding:5px 12px;border-radius:99px;text-transform:uppercase}
+.plano h3{font-size:26px}
+.plano .preco{font-family:"Big";font-weight:900;font-size:62px;line-height:1;margin:10px 0 2px;color:var(--tinta)}
+.plano .preco small{font-size:24px;vertical-align:top;margin-right:2px}
+.plano .vista{font-size:13px;color:var(--cinza);margin-bottom:14px}
+.plano ul{list-style:none;margin:0 0 18px;padding:0;font-size:15px}
+.plano li{padding:7px 0 7px 26px;position:relative;border-top:1px solid var(--linha)}
+.plano li:before{content:"✓";position:absolute;left:4px;color:var(--verde);font-weight:900}
+.plano li.nao{color:#A3A8AF}.plano li.nao:before{content:"✕";color:#C9CDD4}
+.plano .btn.esc{background:var(--asf);color:#fff;box-shadow:0 8px 0 #000}
+/* GARANTIA / RECEBE / FAQ */
+.gar{display:grid;grid-template-columns:86px 1fr;gap:16px;align-items:center;background:#fff;border-radius:16px;padding:18px;border:1px solid var(--linha)}
+.selo{width:86px;height:86px;border-radius:50%;background:var(--asf);color:var(--ama);display:grid;place-items:center;text-align:center;font-family:"Big";font-weight:900;line-height:.9;font-size:30px;border:4px dashed var(--ama)}
+.selo small{display:block;font-size:13px}
+details{background:#fff;border:1px solid var(--linha);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+summary{font-weight:800;cursor:pointer;list-style:none;position:relative;padding-right:24px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:0;top:-2px;font-size:22px;color:var(--lar)}
+details[open] summary:after{content:"−"}
+details p{margin:10px 0 0;font-size:15px;color:var(--cinza)}
+footer{background:var(--asf);color:#8A9099;font-size:13px;padding:34px 0 90px;text-align:center}
+footer a{color:#C9CDD4}
+.foto{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.28)}
+.hero .mock.foto{margin:8px 0 10px}
+.uso .duo{display:grid;grid-template-columns:.8fr 1.2fr;gap:10px;align-items:center;margin-bottom:14px}
+.uso .duo img{height:100%;object-fit:cover}
+.ad div img{width:calc(100% + 28px);margin:-16px -14px 12px;border-radius:14px 14px 0 0;aspect-ratio:3/2;object-fit:cover}
+.modelos{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px}
+.modelos span{background:var(--asf);color:#fff;border-radius:99px;padding:6px 12px;font-size:13px;font-weight:700}
+.plano .foto{box-shadow:none;border-radius:10px}
+/* BARRA FIXA */
+.fixa{position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(21,23,27,.96);backdrop-filter:blur(6px);transform:translateY(110%);transition:transform .25s;z-index:20}
+.fixa.on{transform:none}
+.fixa .btn{font-size:21px;padding:13px 14px 11px;max-width:520px;margin:0 auto}
+/* LUPA */
+.lupa{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:30;padding:16px}
+.lupa.on{display:flex}
+.lupa img{max-height:92vh;border-radius:6px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="w">
+    <span class="kick">Guia de consulta para quem depende da moto</span>
+    <h1><span class="n">120</span>diagnósticos de moto <em>por sintoma</em></h1>
+    <p class="sub">Antes de gastar com peça ou oficina, descubra <b>o que verificar primeiro</b>. Uma página por defeito, com a rota de teste na ordem certa.</p>
+    <img class="mock foto" src="img/mock_principal.jpg" alt="Revista 120 Diagnósticos de Moto impressa na bancada e aberta no celular, com uma CG 160 ao fundo" width="1100" height="733">
+    <div class="chips"><span>Revista digital ilustrada</span><span>Carburada e injetada</span><span>120 fotos de teste</span><span>Funciona no celular</span></div>
+    <a class="btn" href="#planos">Quero o meu guia</a>
+    <p class="miudo">Acesso na hora no seu e-mail · Pagamento único</p>
+  </div>
+</header>
+<div class="fita"></div>
+
+<section class="hist">
+  <div class="w">
+    <img class="foto" src="img/antes.jpg" alt="Entregador empurrando a moto apagada numa rua de São Paulo à noite" width="1100" height="733" loading="lazy" style="margin-bottom:22px">
+    <span class="kick">Acontece todo dia</span>
+    <h2>A moto falhou.<br><em>E agora?</em></h2>
+    <p>Você sai para trabalhar e, no meio do caminho, a moto começa a perder força. Para, liga de novo, anda mais um pouco e morre.</p>
+    <p>No mecânico, o palpite é a bobina. Troca, paga, e a falha continua. Depois vem o carburador. Mais um dia sem a moto, mais dinheiro.</p>
+    <p class="virada">No fim, podia ser só o <b>respiro do tanque entupido</b>: um furinho na tampa. Bastava saber o que olhar primeiro.</p>
+    <p>É para isso que este guia existe: cada defeito com as causas na ordem, <b>da mais comum para a mais rara</b>, e os testes que você faz em minutos, na porta de casa.</p>
+  </div>
+</section>
+
+<section class="car">
+  <div class="w"><span class="kick" style="color:var(--ama)">Veja por dentro</span><h2>Uma página<br>por defeito</h2></div>
+  <div class="trilho" id="trilho">
+    <img src="img/f001.jpg" alt="Ficha 001: aperta a partida e nada acontece" loading="lazy">
+    <img src="img/indice.jpg" alt="Índice por sintoma" loading="lazy">
+    <img src="img/f027.jpg" alt="Ficha 027: falha em alta" loading="lazy">
+    <img src="img/f042.jpg" alt="Ficha 042: luz da injeção piscando" loading="lazy">
+    <img src="img/f055.jpg" alt="Ficha 055: como saber se a moto está carregando" loading="lazy">
+    <img src="img/f014.jpg" alt="Ficha 014: morre quando solta o acelerador" loading="lazy">
+    <img src="img/f067.jpg" alt="Ficha 067: tec-tec no cabeçote" loading="lazy">
+    <img src="img/f091.jpg" alt="Ficha 091: embreagem patinando" loading="lazy">
+    <img src="img/f101.jpg" alt="Ficha 101: corrente e folga" loading="lazy">
+    <img src="img/f107.jpg" alt="Ficha 107: freio a disco fraco" loading="lazy">
+  </div>
+  <p class="dica">Arraste para o lado · toque para ampliar</p>
+</section>
+
+<section class="uso">
+  <div class="w">
+    <span class="kick">Do lado da moto</span>
+    <h2>No celular<br><em>ou impresso</em></h2>
+    <div class="duo"><img class="foto" src="img/mao_celular.jpg" alt="Mãos segurando o celular com uma ficha aberta ao lado de uma CG 160" width="880" height="1100" loading="lazy"><img class="foto" src="img/folheando.jpg" alt="Fichas impressas em cima do banco da moto" width="1100" height="733" loading="lazy"></div>
+    <p>Cada ficha tem a foto do teste, as causas por probabilidade e a rota na ordem certa. Abre no celular sem internet depois de baixar, ou imprime e deixa na garagem.</p>
+  </div>
+</section>
+
+<section>
+  <div class="w">
+    <span class="kick">O que o guia faz por você</span>
+    <h2>Pare de trocar<br><em>peça no chute</em></h2>
+    <div class="cards">
+      <div class="card"><i>1</i><b>Acha pelo sintoma</b><span>Não precisa saber o nome da peça. Procure o que a moto está fazendo.</span></div>
+      <div class="card"><i>2</i><b>Rota de teste na ordem</b><span>Do mais simples para o mais difícil. Muita coisa se resolve nos primeiros passos.</span></div>
+      <div class="card"><i>3</i><b>Causas por probabilidade</b><span>Cada causa marcada como comum, às vezes ou rara.</span></div>
+      <div class="card"><i>4</i><b>O que fazer em seguida</b><span>Se é simples, você resolve. Se é serviço de oficina, chega sabendo o que pedir.</span></div>
+      <div class="card"><i>5</i><b>Avisos de segurança</b><span>Freio, combustível e elétrica com alerta de quando não rodar.</span></div>
+      <div class="card"><i>6</i><b>No celular, do lado da moto</b><span>PDF com índice clicável. Baixou, funciona até sem internet.</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <div class="ad">
+      <div class="sem"><img src="img/antes.jpg" alt="Moto parada na rua à noite" loading="lazy"><h3>Sem o guia</h3><ul><li>Troca peça no chute</li><li>Fica dias sem a moto</li><li>Paga o que disserem</li><li>Não sabe se é simples ou grave</li></ul></div>
+      <div class="com"><img src="img/depois.jpg" alt="Moto funcionando saindo ao amanhecer" loading="lazy"><h3>Com o guia</h3><ul><li>Testa antes de comprar</li><li>Resolve o simples em casa</li><li>Chega na oficina sabendo</li><li>Sabe quando parar de rodar</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <span class="kick">120 fichas em 12 sistemas</span>
+    <h2>Da partida<br><em>ao freio</em></h2>
+    <div class="sis">
+      <div style="--c:#FF6A00">Partida: não pega<small>13 fichas</small></div>
+      <div style="--c:#E9A400">Marcha lenta e apagando<small>12 fichas</small></div>
+      <div style="--c:#E5383B">Falhas e falta de força<small>13 fichas</small></div>
+      <div style="--c:#1F9E89">Carburador e injeção<small>14 fichas</small></div>
+      <div style="--c:#2F80ED">Bateria, carga e luzes<small>14 fichas</small></div>
+      <div style="--c:#7B4BD8">Barulhos do motor<small>10 fichas</small></div>
+      <div style="--c:#5F6B7A">Fumaça e consumo<small>8 fichas</small></div>
+      <div style="--c:#B5651D">Óleo e temperatura<small>6 fichas</small></div>
+      <div style="--c:#12A150">Embreagem e câmbio<small>10 fichas</small></div>
+      <div style="--c:#22577A">Corrente, coroa e pinhão<small>6 fichas</small></div>
+      <div style="--c:#C1121F">Freios<small>8 fichas</small></div>
+      <div style="--c:#0E9AA7">Suspensão e pneus<small>6 fichas</small></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <span class="kick">Feito para as motos que mais rodam</span>
+    <h2>Da CG à Biz,<br><em>carburada ou injetada</em></h2>
+    <img class="foto" src="img/quatro_motos.jpg" alt="Quatro motos populares estacionadas lado a lado numa oficina" width="1100" height="733" loading="lazy">
+    <div class="modelos"><span>CG 125</span><span>CG 150</span><span>CG 160 Titan</span><span>CG 160 Fan</span><span>Bros 160</span><span>Biz 125</span><span>Pop</span><span>Factor</span><span>Fazer</span><span>Scooters</span></div>
+    <p class="miudo" style="text-align:left">Os testes seguem a mesma lógica nessas motos. Quando um valor muda de modelo para modelo, a ficha avisa para conferir o manual.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w pq">
+    <div><h3>É para você se</h3><ul><li>Trabalha de moto: entrega, aplicativo, ida e volta do serviço</li><li>Está começando como mecânico e quer um roteiro de diagnóstico</li><li>Gosta de cuidar da própria moto e não quer depender de palpite</li></ul></div>
+    <div><h3>Não é para você se</h3><ul><li>Procura um curso completo de mecânica ou retífica de motor</li><li>Quer um manual de fábrica de um modelo específico</li></ul></div>
+  </div>
+</section>
+
+<section class="bon">
+  <div class="w">
+    <span class="kick" style="color:var(--ama)">Só no plano completo</span>
+    <h2>3 bônus que<br><em>completam o guia</em></h2>
+    <img class="foto" src="img/mock_bonus_real.jpg" alt="Os 3 bônus impressos em cima da bancada" width="1100" height="733" loading="lazy" style="margin-bottom:14px">
+    <div class="bitem"><b><small>BÔNUS 1</small>Checklist de 15 minutos</b><span>Tudo o que vale olhar antes de rodar a semana ou viajar, numa lista de marcar.</span></div>
+    <div class="bitem"><b><small>BÔNUS 2</small>Guia do multímetro na moto</b><span>7 testes com o que cada leitura significa: bateria, carga, fusível, fio e fuga de corrente.</span></div>
+    <div class="bitem"><b><small>BÔNUS 3</small>Defeitos que se parecem</b><span>12 pares de sintomas iguais com causas diferentes, e o teste que separa um do outro.</span></div>
+  </div>
+</section>
+
+<section id="planos">
+  <div class="w">
+    <span class="kick">Escolha o seu</span>
+    <h2>Mais barato que<br><em>um palpite errado</em></h2>
+    <div class="planos">
+      <div class="plano top">
+        <span class="tag">Recomendado</span>
+        <img class="foto" src="img/mock_kit.jpg" alt="Revista principal e os 3 bônus" width="1100" height="733" loading="lazy" style="margin-bottom:14px">
+        <h3>Plano completo</h3>
+        <div class="preco"><small>R$</small>27,90</div>
+        <div class="vista">pagamento único · Pix ou cartão</div>
+        <ul><li>120 diagnósticos por sintoma</li><li>Índice clicável e registro de manutenção</li><li>Bônus 1: Checklist de 15 minutos</li><li>Bônus 2: Guia do multímetro na moto</li><li>Bônus 3: Defeitos que se parecem</li></ul>
+        <a class="btn checkout" data-plano="completo" data-valor="27.90" href="https://pay.cakto.com.br/mwcyuhd_1360221">Quero o completo</a>
+      </div>
+      <div class="plano">
+        <h3>Plano básico</h3>
+        <div class="preco"><small>R$</small>17,90</div>
+        <div class="vista">pagamento único · Pix ou cartão</div>
+        <ul><li>120 diagnósticos por sintoma</li><li>Índice clicável e registro de manutenção</li><li class="nao">Sem os 3 bônus</li></ul>
+        <a class="btn esc checkout" data-plano="basico" data-valor="17.90" href="https://pay.cakto.com.br/miu3reu_1360240">Quero o básico</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <div class="gar"><div class="selo">7<small>DIAS</small></div><div><b>Garantia de 7 dias.</b> Se o guia não for para você, peça o reembolso pela própria plataforma de pagamento dentro de 7 dias. Sem pergunta.</div></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <span class="kick">Como você recebe</span>
+    <h2>Pagou,<br><em>chegou</em></h2>
+    <div class="cards">
+      <div class="card"><i>1</i><b>Escolha o plano</b><span>Pague no Pix ou no cartão, no checkout seguro.</span></div>
+      <div class="card"><i>2</i><b>Acesso no e-mail</b><span>O link de acesso chega no e-mail que você informar, na hora da aprovação.</span></div>
+      <div class="card"><i>3</i><b>Baixe e use</b><span>No celular, no computador ou impresso para deixar na garagem.</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="w">
+    <span class="kick">Dúvidas</span>
+    <h2>Perguntas<br><em>frequentes</em></h2>
+    <details><summary>Serve para a minha moto?</summary><p>O guia foi feito para motos de baixa e média cilindrada, carburadas e injetadas, as mais comuns no Brasil, incluindo scooters. Os testes seguem a mesma lógica em quase todas. Quando um valor muda de modelo para modelo, a ficha avisa para conferir o manual da sua moto.</p></details>
+    <details><summary>Preciso entender de mecânica?</summary><p>Não. As fichas estão em linguagem simples e começam sempre pelo teste mais fácil. Quando o serviço é de oficina, a ficha diz isso e você leva a moto sabendo o que pedir.</p></details>
+    <details><summary>É um livro físico?</summary><p>Não. É um guia digital em PDF. Você pode usar no celular, no computador ou imprimir.</p></details>
+    <details><summary>Como recebo?</summary><p>Assim que o pagamento é aprovado, o acesso chega no seu e-mail. No Pix, a aprovação costuma ser na hora.</p></details>
+    <details><summary>O guia substitui o mecânico?</summary><p>Não. Ele mostra o que verificar primeiro e o que é simples de resolver. Freio, combustível sob pressão e motor aberto continuam sendo serviço para quem tem prática, e o guia avisa quando parar.</p></details>
+    <a class="btn" href="#planos" style="margin-top:22px">Ver os planos</a>
+  </div>
+</section>
+
+<footer>
+  <div class="w">
+    <p>120 Diagnósticos de Moto · Produto digital</p>
+    <p>Guia de diagnóstico com valores de referência gerais. Não substitui o manual do fabricante nem o serviço de um profissional.</p>
+    <p><a href="privacidade.html">Política de privacidade</a></p>
+    <p>Este site não faz parte do Facebook nem da Meta. Facebook é marca registrada da Meta Platforms, Inc.</p>
+  </div>
+</footer>
+
+<div class="fixa" id="fixa"><a class="btn" href="#planos">Quero o meu guia</a></div>
+<div class="lupa" id="lupa"><img alt=""></div>
+
+<script>
+// Pixel da Meta (preenchido em montar_lp.py)
+var PIXEL_ID = "1511203450927055";
+if (/^\d+$/.test(PIXEL_ID)) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', PIXEL_ID); fbq('track', 'PageView');
+  fbq('track', 'ViewContent', {content_name: '120 Diagnosticos de Moto', currency: 'BRL', value: 27.90});
+}
+// Leva as UTMs da página para o checkout
+(function(){
+  var q = location.search.replace(/^\?/, '');
+  document.querySelectorAll('a.checkout').forEach(function(a){
+    if (q) a.href = a.href + (a.href.indexOf('?') > -1 ? '&' : '?') + q;
+    a.addEventListener('click', function(){
+      if (window.fbq) fbq('track', 'AddToCart', {content_name: a.dataset.plano, currency: 'BRL', value: parseFloat(a.dataset.valor)});
+    });
+  });
+})();
+// Barra fixa depois da primeira dobra, some na área dos planos
+(function(){
+  var fx = document.getElementById('fixa'), pl = document.getElementById('planos');
+  function ver(){ var r = pl.getBoundingClientRect(); var dentro = r.top < innerHeight && r.bottom > 0; fx.classList.toggle('on', scrollY > innerHeight * .9 && !dentro); }
+  addEventListener('scroll', ver, {passive: true}); ver();
+})();
+// Lupa nas páginas do carrossel
+(function(){
+  var l = document.getElementById('lupa'), li = l.querySelector('img');
+  document.querySelectorAll('#trilho img').forEach(function(i){ i.addEventListener('click', function(){ li.src = i.src; l.classList.add('on'); }); });
+  l.addEventListener('click', function(){ l.classList.remove('on'); });
+})();
+</script>
+</body>
+</html>
