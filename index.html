@@ -51,7 +51,7 @@ section{padding:56px 0}
 .car h2{color:#fff}
 .trilho{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 18px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .trilho::-webkit-scrollbar{display:none}
-.trilho img{flex:0 0 74%;max-width:330px;scroll-snap-align:center;border-radius:8px;box-shadow:0 14px 30px rgba(0,0,0,.45);cursor:zoom-in}
+.trilho img{flex:0 0 78%;max-width:360px;scroll-snap-align:center;border-radius:8px;box-shadow:0 14px 30px rgba(0,0,0,.45);cursor:zoom-in}
 .dica{font-size:13px;color:#A8AEB8;text-align:center}
 /* BENEFÍCIOS */
 .cards{display:grid;gap:12px}
@@ -112,7 +112,7 @@ footer{background:var(--asf);color:#8A9099;font-size:13px;padding:34px 0 90px;te
 footer a{color:#C9CDD4}
 .foto{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 14px 34px rgba(0,0,0,.28)}
 .hero .mock.foto{margin:8px 0 10px}
-.uso .duo{display:grid;grid-template-columns:.8fr 1.2fr;gap:10px;align-items:center;margin-bottom:14px}
+.uso .duo{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:center;margin-bottom:14px}
 .uso .duo img{height:100%;object-fit:cover}
 .ad div img{width:calc(100% + 28px);margin:-16px -14px 12px;border-radius:14px 14px 0 0;aspect-ratio:3/2;object-fit:cover}
 .modelos{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px}
@@ -132,10 +132,10 @@ footer a{color:#C9CDD4}
 
 <header class="hero">
   <div class="w">
-    <span class="kick">Guia de consulta para quem depende da moto</span>
+    <span class="kick">Revista digital ilustrada para quem depende da moto</span>
     <h1><span class="n">120</span>diagnósticos de moto <em>por sintoma</em></h1>
     <p class="sub">Antes de gastar com peça ou oficina, descubra <b>o que verificar primeiro</b>. Uma página por defeito, com a rota de teste na ordem certa.</p>
-    <img class="mock foto" src="img/mock_principal.jpg" alt="Revista 120 Diagnósticos de Moto impressa na bancada e aberta no celular, com uma CG 160 ao fundo" width="1100" height="733">
+    <img class="mock foto" src="img/mock_principal.jpg" alt="Revista Diagnóstico de Moto impressa na bancada e aberta no celular, com uma CG 160 ao fundo" width="1100" height="733">
     <div class="chips"><span>Revista digital ilustrada</span><span>Carburada e injetada</span><span>120 fotos de teste</span><span>Funciona no celular</span></div>
     <a class="btn" href="#planos">Quero o meu guia</a>
     <p class="miudo">Acesso na hora no seu e-mail · Pagamento único</p>
@@ -158,16 +158,16 @@ footer a{color:#C9CDD4}
 <section class="car">
   <div class="w"><span class="kick" style="color:var(--ama)">Veja por dentro</span><h2>Uma página<br>por defeito</h2></div>
   <div class="trilho" id="trilho">
-    <img src="img/f001.jpg" alt="Ficha 001: aperta a partida e nada acontece" loading="lazy">
-    <img src="img/indice.jpg" alt="Índice por sintoma" loading="lazy">
-    <img src="img/f027.jpg" alt="Ficha 027: falha em alta" loading="lazy">
-    <img src="img/f042.jpg" alt="Ficha 042: luz da injeção piscando" loading="lazy">
-    <img src="img/f055.jpg" alt="Ficha 055: como saber se a moto está carregando" loading="lazy">
-    <img src="img/f014.jpg" alt="Ficha 014: morre quando solta o acelerador" loading="lazy">
-    <img src="img/f067.jpg" alt="Ficha 067: tec-tec no cabeçote" loading="lazy">
-    <img src="img/f091.jpg" alt="Ficha 091: embreagem patinando" loading="lazy">
-    <img src="img/f101.jpg" alt="Ficha 101: corrente e folga" loading="lazy">
-    <img src="img/f107.jpg" alt="Ficha 107: freio a disco fraco" loading="lazy">
+    <img src="img/r_capa.jpg" alt="Capa da revista Diagnóstico de Moto" loading="lazy">
+    <img src="img/r_f001.jpg" alt="Ficha 001: aperta a partida e nada acontece" loading="lazy">
+    <img src="img/r_f003.jpg" alt="Ficha 003: motor de partida gira fraco, multímetro marcando 9,8 V" loading="lazy">
+    <img src="img/r_f012.jpg" alt="Ficha 012: só pega no tranco, teste de carga com 12,1 V" loading="lazy">
+    <img src="img/r_f014.jpg" alt="Ficha 014: marcha lenta em 1.400 rpm" loading="lazy">
+    <img src="img/r_f015.jpg" alt="Ficha 015: folga do acelerador de 4 mm" loading="lazy">
+    <img src="img/r_indice.jpg" alt="Índice por sintoma" loading="lazy">
+    <img src="img/r_abre.jpg" alt="Abertura do sistema de falhas" loading="lazy">
+    <img src="img/r_f029.jpg" alt="Ficha 029: cabo de vela trincado" loading="lazy">
+    <img src="img/r_f035.jpg" alt="Ficha 035: folga da corrente" loading="lazy">
   </div>
   <p class="dica">Arraste para o lado · toque para ampliar</p>
 </section>
@@ -176,8 +176,8 @@ footer a{color:#C9CDD4}
   <div class="w">
     <span class="kick">Do lado da moto</span>
     <h2>No celular<br><em>ou impresso</em></h2>
-    <div class="duo"><img class="foto" src="img/mao_celular.jpg" alt="Mãos segurando o celular com uma ficha aberta ao lado de uma CG 160" width="880" height="1100" loading="lazy"><img class="foto" src="img/folheando.jpg" alt="Fichas impressas em cima do banco da moto" width="1100" height="733" loading="lazy"></div>
-    <p>Cada ficha tem a foto do teste, as causas por probabilidade e a rota na ordem certa. Abre no celular sem internet depois de baixar, ou imprime e deixa na garagem.</p>
+    <div class="duo"><img class="foto" src="img/mao_celular.jpg" alt="Mãos segurando o celular com uma ficha aberta ao lado de uma CG 160" width="880" height="1100" loading="lazy"><img class="foto" src="img/r_f012.jpg" alt="Página da ficha 012 com a foto do teste de carga" width="760" height="1075" loading="lazy"></div>
+    <p>Cada ficha é uma página de revista: a foto do teste com a leitura real, as causas por probabilidade e a rota na ordem certa. Abre no celular sem internet depois de baixar, ou imprime e deixa na garagem.</p>
   </div>
 </section>
 
